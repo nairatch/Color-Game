@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
+}
+
+aside {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.left-aside {
+    width: 105px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+#displaycolor, #displayscore {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    height: 90px;
+    font-size: 1em;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.easy {
+    background-color: green;
+}
+
+button.medium {
+    background-color: yellow;
+    color: #000;
+}
+
+button.hard {
+    background-color: red;
+}
+
+.right-aside {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 80px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 1px solid rgb(74, 72, 72);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
